@@ -26,3 +26,16 @@ a:active, a:focus{
 ul, ol{
   padding-inline-start: 0;
 }
+//header
+header{
+  .business_navbar a.nav-link {
+    padding: 0.2rem 0 !important;
+    margin: 0.5rem 2rem;
+    border-bottom: 2px solid rgb( 71, 109, 158 );
+    color: rgb( 71, 109, 158 );
+    font-weight: bold;
+  }
+  a.business_login_links{
+    display: inline-block;
+  }
+} 
