@@ -1,0 +1,25 @@
+/*
+table of content:
+-General
+*/
+html {
+  font-size: 1rem; }
+
+body {
+  text-align: right; }
+
+input, button, textArea {
+  outline: none; }
+  input:focus, button:focus, textArea:focus {
+    outline: none; }
+
+a:hover {
+  text-decoration: none; }
+
+a:active, a:focus {
+  outline: none; }
+
+ul, ol {
+  padding-inline-start: 0; }
+
+/*# sourceMappingURL=style.css.map */
