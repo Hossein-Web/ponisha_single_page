@@ -1,12 +1,16 @@
 /*
 table of content:
 -General
+-
+-basic analysis
+-professional_analysis
 */
 html {
   font-size: 1rem; }
 
 body {
-  text-align: right; }
+  text-align: right;
+  color: gray; }
 
 input, button, textArea {
   outline: none; }
@@ -21,5 +25,22 @@ a:active, a:focus {
 
 ul, ol {
   padding-inline-start: 0; }
+
+section#basic_analysis {
+  background-color: #f9faff;
+  text-align: center;
+  padding-top: 60px; }
+  section#basic_analysis h4 {
+    color: #101558;
+    font-weight: bold;
+    padding: 0.7rem; }
+    section#basic_analysis h4 span {
+      color: #4e7ad2; }
+  section#basic_analysis ul {
+    list-style: none;
+    text-align: right; }
+    section#basic_analysis ul h6 {
+      color: #101558;
+      font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
