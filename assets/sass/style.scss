@@ -56,3 +56,24 @@ section#basic_analysis{
     }
   }
   }
+section#professional_analysis{
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 60px;
+  h4{
+    color: #101558;
+    font-weight: bold;
+    padding: 0.7rem;
+    span{
+      color: #4e7ad2;
+    }
+  }
+  ul.nav-pills{
+    background-color: #f9faff;
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px gray;
+    li{
+      border-radius: 50px;
+    }
+  }
+}
