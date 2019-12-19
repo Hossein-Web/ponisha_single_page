@@ -23,6 +23,7 @@ ul, ol {
   padding-inline-start: 0; }
 
 header {
+  padding-bottom: 4rem;
   background-color: #dbe5ff; }
   header .business_navbar a.nav-link {
     padding: 0.2rem 0 !important;
@@ -60,6 +61,15 @@ header {
     color: white;
     background-color: #f2486f;
     border: 1px solid #f2486f;
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    margin-top: 2rem; }
+
+section#websites {
+  margin: 3rem 0; }
+  section#websites p#business_websites_title {
+    text-align: center;
+    color: #b0afb4; }
+    section#websites p#business_websites_title span {
+      color: #4d78f8; }
 
 /*# sourceMappingURL=style.css.map */
