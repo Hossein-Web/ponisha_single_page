@@ -26,16 +26,18 @@ a:active, a:focus {
 ul, ol {
   padding-inline-start: 0; }
 
-section#basic_analysis {
-  background-color: #f9faff;
+section#basic_analysis, section#professional_analysis {
   text-align: center;
   padding-top: 60px; }
-  section#basic_analysis h4 {
+  section#basic_analysis h4, section#professional_analysis h4 {
     color: #101558;
     font-weight: bold;
     padding: 0.7rem; }
-    section#basic_analysis h4 span {
+    section#basic_analysis h4 span, section#professional_analysis h4 span {
       color: #4e7ad2; }
+
+section#basic_analysis {
+  background-color: #f9faff; }
   section#basic_analysis ul {
     list-style: none;
     text-align: right; }
@@ -44,15 +46,7 @@ section#basic_analysis {
       font-weight: bold; }
 
 section#professional_analysis {
-  background-color: #ffffff;
-  text-align: center;
-  padding-top: 60px; }
-  section#professional_analysis h4 {
-    color: #101558;
-    font-weight: bold;
-    padding: 0.7rem; }
-    section#professional_analysis h4 span {
-      color: #4e7ad2; }
+  background-color: #ffffff; }
   section#professional_analysis ul.nav-pills {
     background-color: #f9faff;
     border-radius: 50px;
