@@ -28,6 +28,7 @@ ul, ol{
 }
 //header
 header{
+  background-color: rgb( 219, 229, 255 );
   .business_navbar a.nav-link {
     padding: 0.2rem 0 !important;
     margin: 0.5rem 2rem;
@@ -52,6 +53,30 @@ header{
         background-color: rgb( 219, 219, 255 );
         color: rgb( 77, 120, 248 );
       }
+    }
+  }
+
+  div#business_header_titles{
+    h2#business_title_1{
+      font-weight: bold;
+      color: rgb( 77, 120, 248 );
+      span{
+        color: rgb( 237, 171, 48 );
+      }
+    }
+    h5#business_title_2{
+      color: rgb( 76, 102, 151 );
+      span{
+        color: rgb( 242, 72, 111 );
+      }
+    }
+    a{
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      color: white;
+      background-color: rgb( 242, 72, 111 );
+      border: 1px solid rgb( 242, 72, 111 );
+      border-radius: 2rem;
     }
   }
 }
