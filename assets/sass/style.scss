@@ -35,7 +35,23 @@ header{
     color: rgb( 71, 109, 158 );
     font-weight: bold;
   }
-  a.business_login_links{
-    display: inline-block;
+  div.business_login_links{
+    margin: 0.5rem 0;
+    a {
+      display: inline-block;
+      margin: 0.2rem 0;
+      padding: 0.5rem 2rem;
+      border-radius: 2rem;
+      &#business_sign_up{
+        border: 1px solid rgb( 77, 120, 248 );
+        background-color: rgb( 77, 120, 248 );
+        color: white;
+      }
+      &#business_login{
+        border: 1px solid rgb( 219, 219, 255 );
+        background-color: rgb( 219, 219, 255 );
+        color: rgb( 77, 120, 248 );
+      }
+    }
   }
-} 
+}
