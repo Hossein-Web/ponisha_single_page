@@ -45,12 +45,10 @@ header{
       padding: 0.5rem 2rem;
       border-radius: 2rem;
       &#business_sign_up{
-        border: 1px solid rgb( 77, 120, 248 );
         background-color: rgb( 77, 120, 248 );
         color: white;
       }
       &#business_login{
-        border: 1px solid rgb( 219, 219, 255 );
         background-color: rgb( 219, 219, 255 );
         color: rgb( 77, 120, 248 );
       }
@@ -76,7 +74,6 @@ header{
       padding: 0.5rem 1rem;
       color: white;
       background-color: rgb( 242, 72, 111 );
-      border: 1px solid rgb( 242, 72, 111 );
       border-radius: 2rem;
       margin-top: 2rem;
     }
@@ -90,6 +87,68 @@ section#websites{
     color: rgb( 176, 175, 180 );
     span{
       color: rgb( 77, 120, 248 );
+    }
+  }
+}
+
+section#mechanism{
+  h4{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  ul,ol{
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  ol#business_mechanism_list{
+    color: rgb( 84, 84, 84 );
+    margin-right: 2.5rem;
+    list-style: none;
+    counter-reset: border_list ;
+    li{
+      margin-bottom: 1.5rem;
+      counter-increment: border_list;
+      &::before{
+        content: counter(border_list);
+        font-size: 1.2rem;
+        color: rgb( 77, 121, 246 );
+        border: 3px solid rgb( 77, 121, 246 );
+        padding: 0.1rem 0.6rem;
+        border-radius: 50%;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  div#download_plugin{
+    background-color: rgb( 77, 121, 246 );
+    border: 1px solid rgb( 77, 121, 246 );
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1rem;
+    text-align: center;
+    p{
+      color: white;
+      text-align: right;
+    }
+    a{
+      display: inline-block;
+      background-color: rgb(241, 243, 255);
+      padding: 0.2rem 1.5rem;
+      border-radius: 0.2rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    ul{
+      color: white;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      li{
+        margin: 0.5rem;
+        padding: 0.5rem 0.8rem;
+        border: 2px solid white;
+        border-radius: 2rem;
+      }
     }
   }
 }

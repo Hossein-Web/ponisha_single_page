@@ -39,11 +39,9 @@ header {
       padding: 0.5rem 2rem;
       border-radius: 2rem; }
       header div.business_login_links a#business_sign_up {
-        border: 1px solid #4d78f8;
         background-color: #4d78f8;
         color: white; }
       header div.business_login_links a#business_login {
-        border: 1px solid #dbdbff;
         background-color: #dbdbff;
         color: #4d78f8; }
   header div#business_header_titles h2#business_title_1 {
@@ -60,7 +58,6 @@ header {
     padding: 0.5rem 1rem;
     color: white;
     background-color: #f2486f;
-    border: 1px solid #f2486f;
     border-radius: 2rem;
     margin-top: 2rem; }
 
@@ -71,5 +68,55 @@ section#websites {
     color: #b0afb4; }
     section#websites p#business_websites_title span {
       color: #4d78f8; }
+
+section#mechanism h4 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem; }
+section#mechanism ul, section#mechanism ol {
+  font-size: 0.8rem;
+  font-weight: 600; }
+section#mechanism ol#business_mechanism_list {
+  color: #545454;
+  margin-right: 2.5rem;
+  list-style: none;
+  counter-reset: border_list; }
+  section#mechanism ol#business_mechanism_list li {
+    margin-bottom: 1.5rem;
+    counter-increment: border_list; }
+    section#mechanism ol#business_mechanism_list li::before {
+      content: counter(border_list);
+      font-size: 1.2rem;
+      color: #4d79f6;
+      border: 3px solid #4d79f6;
+      padding: 0.1rem 0.6rem;
+      border-radius: 50%;
+      margin-left: 0.5rem; }
+section#mechanism div#download_plugin {
+  background-color: #4d79f6;
+  border: 1px solid #4d79f6;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem;
+  text-align: center; }
+  section#mechanism div#download_plugin p {
+    color: white;
+    text-align: right; }
+  section#mechanism div#download_plugin a {
+    display: inline-block;
+    background-color: #f1f3ff;
+    padding: 0.2rem 1.5rem;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 600; }
+  section#mechanism div#download_plugin ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: center; }
+    section#mechanism div#download_plugin ul li {
+      margin: 0.5rem;
+      padding: 0.5rem 0.8rem;
+      border: 2px solid white;
+      border-radius: 2rem; }
 
 /*# sourceMappingURL=style.css.map */
