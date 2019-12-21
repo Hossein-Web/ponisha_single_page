@@ -5,6 +5,7 @@ table of content:
 -
 -basic analysis
 -professional_analysis
+-advanced_analysis
 */
 
 //General
@@ -32,11 +33,12 @@ ul, ol{
   padding-inline-start: 0;
 
 }
-//basic analysis and professional_analysis
+//basic analysis and professional_analysis and advanced_analysis
 //-----------------------------------
-section#basic_analysis ,section#professional_analysis{
+section#basic_analysis ,section#professional_analysis, section#advanced_analysis{
   text-align: center;
   padding-top: 60px;
+  padding-bottom: 60px;
   h4{
     color: #101558;
     font-weight: bold;
@@ -46,6 +48,8 @@ section#basic_analysis ,section#professional_analysis{
     }
   }
 }
+//basic_analysis
+//----------------------------------
 section#basic_analysis{
   background-color: #f9faff;
   ul{
@@ -58,6 +62,8 @@ section#basic_analysis{
     }
   }
   }
+//professional_analysis
+//-------------------------------------
 section#professional_analysis{
   background-color: #ffffff;
   p{
@@ -112,5 +118,32 @@ section#professional_analysis{
     img{
       float: right;
     }
+  }
+}
+//advanced_analysis
+//-----------------------------------
+section#advanced_analysis{
+  background-color: #f9faff;
+  ul{
+    text-align: right;
+    list-style: none;
+    font-size: 0.9rem;
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+    li{
+      padding-top: 1rem;
+      &::before{
+        content: "\2022";
+        color: #007bff;
+        display: inline-block;
+        width: 1rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  img{
+    margin-left: 5rem;
+    margin-bottom: 5rem;
   }
 }
