@@ -44,16 +44,16 @@ header {
       header div.business_login_links a#business_login {
         background-color: #dbdbff;
         color: #4d78f8; }
-  header div#business_header_titles h2#business_title_1 {
+  header h2 {
     font-weight: bold;
     color: #4d78f8; }
-    header div#business_header_titles h2#business_title_1 span {
+    header h2 span {
       color: #edab30; }
-  header div#business_header_titles h5#business_title_2 {
+  header h5 {
     color: #4c6697; }
-    header div#business_header_titles h5#business_title_2 span {
+    header h5 span {
       color: #f2486f; }
-  header div#business_header_titles a {
+  header a#free_start {
     display: inline-block;
     padding: 0.5rem 1rem;
     color: white;
@@ -112,13 +112,59 @@ section#mechanism {
       font-weight: 600; }
     section#mechanism div#download_plugin ul {
       color: white;
-      list-style: none;
-      display: flex;
-      justify-content: center; }
+      list-style: none; }
       section#mechanism div#download_plugin ul li {
         margin: 0.5rem;
         padding: 0.5rem 0.8rem;
         border: 2px solid white;
         border-radius: 2rem; }
+
+section#popular_posts {
+  text-align: center;
+  padding: 3rem 0; }
+  section#popular_posts div.business_post {
+    box-shadow: 0 0 3px gray;
+    padding: 0.4rem; }
+    section#popular_posts div.business_post img {
+      border-radius: 5px 5px 0 0; }
+    section#popular_posts div.business_post h6 {
+      color: #0b094a;
+      font-weight: 600;
+      text-align: right;
+      padding-top: 1.5rem; }
+    section#popular_posts div.business_post p {
+      text-align: right;
+      color: #545454;
+      font-size: 0.9rem; }
+    section#popular_posts div.business_post a {
+      display: inline-block;
+      background-color: #4d79f6;
+      color: #f1f3ff;
+      padding: 0.2rem 1rem;
+      border-radius: 0.2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: right; }
+
+footer {
+  font-size: 0.7rem; }
+  footer p {
+    color: #545454; }
+  footer h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0b094a; }
+  footer ul {
+    list-style: none; }
+    footer ul li {
+      margin-bottom: 0.2rem; }
+      footer ul li a {
+        color: #545454; }
+    footer ul#business_social_network {
+      display: flex; }
+      footer ul#business_social_network li {
+        background-color: #eef1fa;
+        border-radius: 50%;
+        padding: 0.5rem 0.8rem; }
 
 /*# sourceMappingURL=style.css.map */

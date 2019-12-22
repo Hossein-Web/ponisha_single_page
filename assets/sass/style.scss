@@ -54,22 +54,20 @@ header{
       }
     }
   }
-
-  div#business_header_titles{
-    h2#business_title_1{
+    h2{
       font-weight: bold;
       color: rgb( 77, 120, 248 );
       span{
         color: rgb( 237, 171, 48 );
       }
     }
-    h5#business_title_2{
+    h5{
       color: rgb( 76, 102, 151 );
       span{
         color: rgb( 242, 72, 111 );
       }
     }
-    a{
+    a#free_start{
       display: inline-block;
       padding: 0.5rem 1rem;
       color: white;
@@ -77,7 +75,6 @@ header{
       border-radius: 2rem;
       margin-top: 2rem;
     }
-  }
 }
 
 section#websites{
@@ -142,13 +139,73 @@ section#mechanism{
     ul{
       color: white;
       list-style: none;
-      display: flex;
-      justify-content: center;
       li{
         margin: 0.5rem;
         padding: 0.5rem 0.8rem;
         border: 2px solid white;
         border-radius: 2rem;
+      }
+    }
+  }
+}
+
+section#popular_posts{
+  text-align: center;
+  padding: 3rem 0;
+  div.business_post{
+    box-shadow: 0 0 3px gray;
+    padding: 0.4rem;
+    img{
+      border-radius: 5px 5px 0 0;
+    }
+    h6{
+      color: rgb( 11, 9, 74 );
+      font-weight: 600;
+      text-align: right;
+      padding-top: 1.5rem;
+    }
+    p{
+      text-align: right;
+      color: rgb( 84, 84, 84 );
+      font-size: 0.9rem;
+    }
+    a{
+      display: inline-block;
+      background-color: rgb( 77, 121, 246 );
+      color: rgb(241, 243, 255);
+      padding: 0.2rem 1rem;
+      border-radius: 0.2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: right;
+    }
+  }
+}
+
+footer{
+  font-size: 0.7rem;
+  p{
+    color: rgb( 84, 84, 84 );
+  }
+  h6{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb( 11, 9, 74 );
+  }
+  ul{
+    list-style: none;
+    li{
+      margin-bottom: 0.2rem;
+      a{
+        color: rgb( 84, 84, 84 );
+      }
+    }
+    &#business_social_network{
+      display: flex;
+      li{
+        background-color: rgb( 238, 241, 250 );
+        border-radius: 50%;
+        padding: 0.5rem 0.8rem;
       }
     }
   }
