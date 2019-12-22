@@ -167,4 +167,18 @@ footer {
         border-radius: 50%;
         padding: 0.5rem 0.8rem; }
 
+div#go_top {
+  text-align: center;
+  position: fixed;
+  bottom: 4rem;
+  left: 7rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  z-index: 150;
+  background-color: #4d78f8; }
+  div#go_top a {
+    color: white; }
+
 /*# sourceMappingURL=style.css.map */

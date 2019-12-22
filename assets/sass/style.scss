@@ -210,3 +210,18 @@ footer{
     }
   }
 }
+div#go_top{
+  text-align: center;
+  position: fixed;
+  bottom: 4rem;
+  left: 7rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  z-index: 150;
+  background-color: rgb( 77, 120, 248 );
+  a{
+    color: white;
+  }
+}
