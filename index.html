@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/ion.rangeSlider.css"/>
 </head>
 <body>
 <div>
@@ -250,12 +251,12 @@
                 <div class="col-md-7">
                     <div id="visit_site_form_container" >
                         <h4>پرداخت به میزان بازدید سایت</h4>
-                            <ul class="nav nav-pills" role="tablist">
+                            <ul class="nav nav-pills justify-content-center" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link" data-toggle="pill" href="#pill1">شخصی</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="pill" href="#pill2">تجاری</a>
+                                    <a class="nav-link active" data-toggle="pill" href="#pill2">تجاری</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" data-toggle="pill" href="#pill3">آژانس های تبلیغاتی</a>
@@ -265,9 +266,13 @@
                                 <div id="pill1" class="container tab-pane active">
                                     <div>گزارش حرارتی:&nbsp;&nbsp;<span>5</span> تحلیل در ماه</div>
                                     <div>قیف فروش:&nbsp;&nbsp;<span>10</span> گزارش در ماه</div>
+                                    <h6>تعداد مراجعه کاربران</h6>
                                     <div id="users_slider_container">
                                         <input id="users_slider" type="text" >
                                     </div><!-- .users_slider -->
+                                    <input id="cost_result" type="text" value="هزینه: 24/759 تومان">
+                                    <br>
+                                    <input id="submit_cost"  type="submit" value="ثبت سفارش">
                                 </div><!-- #pill1 -->
                                 <div id="pill2" class="container tab-pane fade">
 
