@@ -6,6 +6,8 @@ table of content:
 -basic analysis
 -professional_analysis
 -advanced_analysis
+-
+-visit site
 */
 
 //General
@@ -33,9 +35,9 @@ ul, ol{
   padding-inline-start: 0;
 
 }
-//basic analysis and professional_analysis and advanced_analysis
+//basic analysis, professional_analysis, advanced_analysis, visit site
 //-----------------------------------
-section#basic_analysis ,section#professional_analysis, section#advanced_analysis{
+section#basic_analysis ,section#professional_analysis, section#advanced_analysis, section#visit_site{
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -145,5 +147,66 @@ section#advanced_analysis{
   img{
     margin-left: 5rem;
     margin-bottom: 5rem;
+  }
+}
+//visit_site
+//--------------------------------
+section#visit_site{
+  background-color: #5a6ef1;
+  h4{
+    color: white;
+  }
+  ul{
+    width: 90%;
+    background-color: white;
+    border-radius: 25px;
+    margin: 2rem auto 1.5rem;
+    height: 2.1rem;
+    @media only screen and ( max-width: 792px ){
+      height: auto;
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+    li{
+      position: relative;
+      top: -31%;
+      margin: 0.2rem auto;
+      font-size: 0.8rem;
+      a{
+        color: #101558;
+        font-weight: bold;
+        padding: 0.9rem 2.2rem;
+        &.active{
+          background-color: #4d79f6;
+          border-radius: 25px;
+          color: white;
+          box-shadow: 1px 1px 5px gray;
+        }
+      }
+    }
+  div.tab-content{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    input#cost_result{
+      margin: 2rem 0 0;
+    }
+    input#submit_cost{
+      border-radius: 10px;
+      padding: 8px 25px;
+      color: #fed5da;
+      background-color: #fa5074;
+      font-size: 0.8rem;
+      font-weight: bold;
+      border: 1px solid gray;
+      box-shadow: -1px 0.5px 2px gray;
+      margin: 2rem 0 3rem;
+      &:hover{
+        cursor: pointer;
+      }
+    }
   }
 }
