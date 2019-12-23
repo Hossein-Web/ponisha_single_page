@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/ion.rangeSlider.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 <body>
-<div class="container-fluid">
+<div>
     <header>
         <div class="container-fluid">
             <div class="row justify-content-center">
@@ -88,7 +89,7 @@
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4>تحلیل پایه</h4>
+                            <h4>تحلیل <span>پایه</span></h4>
                             <p>کاربران اینترنت را قبل از اینکه مشتریان شما باشند شناسایی و هدف گذاری کنید.</p>
                         </div><!-- .col-md-12 -->
                     </div><!-- .row -->
@@ -124,7 +125,7 @@
                 <div class="col-md-7">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4>تحلیل حرفه ای</h4>
+                            <h4>تحلیل <span>حرفه ای</span></h4>
                             <p>سفر مشتری را از صفر تا 100 پایش کنید و تحلیل های دیجیتال مارکتینگ را خیلی ساده دریافت کنید.</p>
                         </div><!-- .col-md-12 -->
                     </div><!-- .row -->
@@ -132,8 +133,8 @@
                         <div class="col-md-12">
                             <ul class="nav nav-pills" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="pill" href="#menu1">
-                                        <span>cro</span>
+                                    <a class="nav-link active" data-toggle="pill" href="#menu1">
+                                        <span>CRO</span>
                                         <br>
                                         <span>بهبود نرخ تبدیل مشتری</span>
                                     </a>
@@ -154,7 +155,7 @@
                                 </li>
                             </ul>
                             <div class="tab-content">
-                                <div id="menu1" class="container tab-pane active">
+                                <div id="menu1" class="container tab-pane clearfix active">
                                     <ul>
                                         <li>خیلی ساده و سریع نرخ تبدیل در قیف فروش خود را بهبود دهید.</li>
                                         <li>سفر مشتریان خود را رصد و نقاط نیازمند بهبود را شناسایی کنید.</li>
@@ -168,7 +169,7 @@
                                         <li>سفر مشتریان خود را رصد و نقاط نیازمند بهبود را شناسایی کنید.</li>
                                         <li>مشتریان خود را دسته بندی کنید تا بر اساس پرسنای آن ها نرخ تبدیل قابل برنامه ریزی باشد.</li>
                                     </ul>
-                                    <img src="#" alt="#" />
+                                    <img src="#" alt="" />
                                 </div><!-- #menu2 -->
                                 <div id="menu3" class="container tab-pane fade">
                                     <ul>
@@ -189,26 +190,26 @@
     <section id="advanced_analysis">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-md-10">
+                <div class="col-md-8">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4>تحلیل پیشرفته</h4>
+                            <h4>تحلیل <span>پیشرفته</span></h4>
                             <p>با ابزار گزارش حرارتی، قیف فروش و تشریح آینده کسب و کار خود را بیمه کنید.</p>
                         </div><!-- .col-md-12 -->
                     </div><!-- .row -->
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-5">
                             <ul>
                                 <li>آنالیز و ارزیابی میزان رضایت مشتریان در بازاریابی( Performance Marketing )</li>
                                 <li>آنالیز و ارزیابی انطباق مشخصات محصول با نیاز بازار ( Product Managing )</li>
                                 <li>آنالیز و ارزیابی میزان تبدیل کاربران به مشتریان جهت بهبود تجربه کاربری ( A/B Testing )</li>
                             </ul>
-                        </div><!-- .col-md-4 -->
-                        <div class="col-md-8">
+                        </div><!-- .col-md-5 -->
+                        <div class="col-md-7">
                             <img src="#" alt=""/>
-                        </div><!-- .col-md-8 -->
+                        </div><!-- .col-md-7 -->
                     </div><!-- .row -->
-                </div><!-- .col-md-10 -->
+                </div><!-- .col-md-8 -->
             </div><!-- .row -->
 
         </div><!-- .container-fluid -->
@@ -257,7 +258,7 @@
                                     <a class="nav-link" data-toggle="pill" href="#pill1">شخصی</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="pill" href="#pill2">تجاری</a>
+                                    <a class="nav-link active" data-toggle="pill" href="#pill2">تجاری</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" data-toggle="pill" href="#pill3">آژانس های تبلیغاتی</a>
@@ -265,11 +266,14 @@
                             </ul>
                             <div class="tab-content">
                                 <div id="pill1" class="container tab-pane active">
-                                    <div>گزارش حرارتی:&nbsp;&nbsp;<span>5</span> تحلیل در ماه</div>
-                                    <div>قیف فروش:&nbsp;&nbsp;<span>10</span> گزارش در ماه</div>
+                                    <div id="report"><span><span>گزارش حرارتی:&nbsp;</span>&nbsp&nbsp;&nbsp;&nbsp;<span>5 </span><span>تحلیل در ماه</span></span></div>
+                                    <div id="sale"><span>&nbsp;<span>قیف فروش:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>10 </span><span>گزارش در ماه</span></span></div>
+                                    <h6>تعداد مراجعه کاربران</h6>
                                     <div id="users_slider_container">
                                         <input id="users_slider" type="text" >
                                     </div><!-- .users_slider -->
+                                    <div id="cost_result"><span><span>هزینه: </span><span>24.759 </span><span>تومان</span></span></div>
+                                    <input id="submit_cost"  type="submit" value="ثبت سفارش">
                                 </div><!-- #pill1 -->
                                 <div id="pill2" class="container tab-pane fade">
 
