@@ -37,44 +37,66 @@ a:active, a:focus{
 ul, ol{
   padding-inline-start: 0;
 }
+
+section, footer{
+  padding: 4rem 0;
+}
 //header
 //----------------------------------
 header{
-  padding-bottom: 4rem;
-  background-color: rgb( 219, 229, 255 );
-  .business_navbar a.nav-link {
-    padding: 0.2rem 0 !important;
-    margin: 0.5rem 2rem;
-    border-bottom: 2px solid rgb( 71, 109, 158 );
-    color: rgb( 71, 109, 158 );
-    font-weight: bold;
+  background-color: #f9faff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  .business_navbar{
+    >ul{
+      >li{
+        a.nav-link {
+          padding: 0.2rem 0 !important;
+          margin: 0.5rem 2rem;
+          color: #57648b;
+          font-weight: bold;
+        }
+        &.active{
+          a{
+            color: rgb( 77, 120, 248 );
+            border-bottom: 2px solid rgb( 77, 120, 248 );
+          }
+        }
+      }
+    }
   }
   div.business_login_links{
-    margin: 0.5rem 0;
+    margin: 1.5rem 0;
+    text-align: center;
     a {
       display: inline-block;
-      margin: 0.2rem 0;
-      padding: 0.5rem 2rem;
+      padding: 0 1rem 0.3rem;
       border-radius: 2rem;
       &#business_sign_up{
         background-color: rgb( 77, 120, 248 );
         color: white;
+        margin-left: 0.5rem;
       }
       &#business_login{
-        background-color: rgb( 219, 219, 255 );
+        background-color: #dbe5ff;
         color: rgb( 77, 120, 248 );
       }
     }
   }
+
+  div#header_content{
+    padding: 4rem 0;
     h2{
       font-weight: bold;
       color: rgb( 77, 120, 248 );
+      margin: 2.5rem 0;
       span{
         color: rgb( 237, 171, 48 );
       }
     }
     h5{
-      color: rgb( 76, 102, 151 );
+      color: #57648b;
+      font-weight: 600;
       span{
         color: rgb( 242, 72, 111 );
       }
@@ -87,12 +109,12 @@ header{
       border-radius: 2rem;
       margin-top: 2rem;
     }
+  }
 }
 
 //websites
 //----------------------------------
 section#websites{
-  margin: 3rem 0;
   p#business_websites_title{
     text-align: center;
     color: rgb( 176, 175, 180 );
@@ -106,8 +128,6 @@ section#websites{
 //-----------------------------------
 section#basic_analysis ,section#professional_analysis, section#advanced_analysis, section#visit_site{
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
   h4{
     color: #101558;
     font-weight: bold;
@@ -160,7 +180,11 @@ section#professional_analysis{
         }
       }
       }
-
+    }
+    @media only screen and (max-width: 512px) {
+      height: auto;
+      width: 100%;
+      flex-direction: column;
     }
   }
   div.tab-content{
@@ -219,11 +243,11 @@ section#advanced_analysis{
 //mechanism
 //----------------------------------
 section#mechanism{
-  margin-bottom: 3rem;
   h4{
     font-weight: bold;
     text-align: center;
     margin-bottom: 3rem;
+    color: #101558;
   }
   ul,ol{
     font-size: 0.8rem;
@@ -252,11 +276,14 @@ section#mechanism{
     background-color: rgb( 77, 121, 246 );
     border: 1px solid rgb( 77, 121, 246 );
     border-radius: 0.5rem 0.5rem 0 0;
-    padding: 1rem;
+    padding: 0.7rem 0.8rem;
     text-align: center;
     p{
       color: white;
-      text-align: right;
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
     }
     a{
       display: inline-block;
@@ -269,6 +296,7 @@ section#mechanism{
     ul{
       color: white;
       list-style: none;
+      margin-bottom: 0.2rem;
       li{
         margin: 0.5rem;
         padding: 0.5rem 0.8rem;
@@ -282,11 +310,16 @@ section#mechanism{
 //--------------------------------
 section#visit_site {
   background-color: #5a6ef1;
-
+  margin-bottom: 15rem;
+  padding: 0;
+  div#visit_site_form_container {
+    position: relative;
+    top: 30%;
   h4 {
     color: white;
+    margin: 0;
+    padding: 0;
   }
-
   ul {
     width: 90%;
     background-color: white;
@@ -299,18 +332,15 @@ section#visit_site {
       flex-direction: column;
     }
   }
-
   li {
     position: relative;
     top: -31%;
     margin: 0.2rem auto;
     font-size: 0.8rem;
-
     a {
       color: #101558;
       font-weight: bold;
       padding: 0.9rem 2.2rem;
-
       &.active {
         background-color: #4d79f6;
         border-radius: 25px;
@@ -319,17 +349,18 @@ section#visit_site {
       }
     }
   }
-
   div.tab-content {
     padding-top: 2rem;
     padding-bottom: 3rem;
     background-color: white;
     border-radius: 10px;
-
+    box-shadow: 1px 1px 5px gray;
+    font-size: 0.8rem;
+    font-weight: 600;
     div#report, div#sale, div#cost_result {
       > span {
         display: inline-block;
-        padding: 1rem 5rem;
+        padding: 0.7rem 5rem;
 
         span:first-child {
           color: #747474;
@@ -357,7 +388,8 @@ section#visit_site {
     }
 
     h6 {
-      margin-top: 2rem;
+      margin-top: 1.7rem;
+      margin-bottom: 0;
       color: #101558;
       font-weight: bold;
     }
@@ -403,7 +435,7 @@ section#visit_site {
     }
 
     div#cost_result {
-      margin: 3.5rem 0 0;
+      margin: 3rem 0 0;
 
       > span {
         background-color: #eef2fd;
@@ -430,13 +462,14 @@ section#visit_site {
     }
   }
 }
+}
 //popular_posts
 //--------------------------------
 section#popular_posts{
   text-align: center;
-  padding: 3rem 0;
   div.business_post{
     box-shadow: 0 0 3px gray;
+    margin: 1rem 0;
     padding: 0.4rem;
     img{
       border-radius: 5px 5px 0 0;
@@ -450,7 +483,7 @@ section#popular_posts{
     p{
       text-align: right;
       color: rgb( 84, 84, 84 );
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
     a{
       display: inline-block;
@@ -475,6 +508,7 @@ footer{
     font-size: 1rem;
     font-weight: 600;
     color: rgb( 11, 9, 74 );
+    margin-bottom: 1rem;
   }
   ul{
     list-style: none;
@@ -499,8 +533,8 @@ footer{
 div#go_top{
   text-align: center;
   position: fixed;
-  bottom: 4rem;
-  left: 7rem;
+  bottom: 7.5rem;
+  left: 4rem;
   width: 3rem;
   height: 3rem;
   padding: 0.5rem;
