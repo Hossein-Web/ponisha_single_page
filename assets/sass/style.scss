@@ -186,30 +186,32 @@ section#visit_site{
       }
     }
   div.tab-content{
-    //text-align: center;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     background-color: white;
     border-radius: 10px;
-    div#report, div#sale{
-      display: inline-block;
-      padding: 1rem 5rem;
-      span:first-child{
-        color: #747474;
-      }
-      span:nth-child(2){
-        color: #4d79f6;
-        font-weight: bold;
-      }
-      span:nth-child(3){
-        color: #101558;
-        font-weight: bold;
+    div#report, div#sale, div#cost_result{
+      >span {
+        display: inline-block;
+        padding: 1rem 5rem;
+        span:first-child{
+          color: #747474;
+        }
+        span:nth-child(2){
+          color: #4d79f6;
+          font-weight: bold;
+        }
+        span:nth-child(3){
+          color: #101558;
+          font-weight: bold;
+        }
       }
     }
-    div#report{
+    div#report>span{
       background-color: #ececec;
+      padding: 1rem 5rem;
     }
-    div#sale{
+    div#sale>span{
       border-bottom: 1px solid #ececec;
     }
     h6{
@@ -251,8 +253,14 @@ section#visit_site{
         }
       }
     }
-    input#cost_result{
-      margin: 2rem 0 0;
+    div#cost_result{
+      margin: 3.5rem 0 0;
+     >span{
+          background-color: #eef2fd;
+          box-shadow: 1px 1px 5px gray;
+          border-radius: 10px;
+          padding: 0.5rem 1rem;
+        }
     }
     input#submit_cost{
       border-radius: 10px;
@@ -263,7 +271,7 @@ section#visit_site{
       font-weight: bold;
       border: 1px solid gray;
       box-shadow: -1px 0.5px 2px gray;
-      margin: 2rem 0 3rem;
+      margin: 1rem 0 0;
       &:hover{
         cursor: pointer;
       }

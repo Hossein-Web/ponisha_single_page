@@ -143,23 +143,24 @@ section#visit_site {
         box-shadow: 1px 1px 5px gray; }
   section#visit_site div.tab-content {
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     background-color: white;
     border-radius: 10px; }
-    section#visit_site div.tab-content div#report, section#visit_site div.tab-content div#sale {
+    section#visit_site div.tab-content div#report > span, section#visit_site div.tab-content div#sale > span, section#visit_site div.tab-content div#cost_result > span {
       display: inline-block;
       padding: 1rem 5rem; }
-      section#visit_site div.tab-content div#report span:first-child, section#visit_site div.tab-content div#sale span:first-child {
+      section#visit_site div.tab-content div#report > span span:first-child, section#visit_site div.tab-content div#sale > span span:first-child, section#visit_site div.tab-content div#cost_result > span span:first-child {
         color: #747474; }
-      section#visit_site div.tab-content div#report span:nth-child(2), section#visit_site div.tab-content div#sale span:nth-child(2) {
+      section#visit_site div.tab-content div#report > span span:nth-child(2), section#visit_site div.tab-content div#sale > span span:nth-child(2), section#visit_site div.tab-content div#cost_result > span span:nth-child(2) {
         color: #4d79f6;
         font-weight: bold; }
-      section#visit_site div.tab-content div#report span:nth-child(3), section#visit_site div.tab-content div#sale span:nth-child(3) {
+      section#visit_site div.tab-content div#report > span span:nth-child(3), section#visit_site div.tab-content div#sale > span span:nth-child(3), section#visit_site div.tab-content div#cost_result > span span:nth-child(3) {
         color: #101558;
         font-weight: bold; }
-    section#visit_site div.tab-content div#report {
-      background-color: #ececec; }
-    section#visit_site div.tab-content div#sale {
+    section#visit_site div.tab-content div#report > span {
+      background-color: #ececec;
+      padding: 1rem 5rem; }
+    section#visit_site div.tab-content div#sale > span {
       border-bottom: 1px solid #ececec; }
     section#visit_site div.tab-content h6 {
       margin-top: 2rem;
@@ -193,8 +194,13 @@ section#visit_site {
           height: 5px;
           width: 1px;
           border: 1px solid #e1e4e9; }
-    section#visit_site div.tab-content input#cost_result {
-      margin: 2rem 0 0; }
+    section#visit_site div.tab-content div#cost_result {
+      margin: 3.5rem 0 0; }
+      section#visit_site div.tab-content div#cost_result > span {
+        background-color: #eef2fd;
+        box-shadow: 1px 1px 5px gray;
+        border-radius: 10px;
+        padding: 0.5rem 1rem; }
     section#visit_site div.tab-content input#submit_cost {
       border-radius: 10px;
       padding: 8px 25px;
@@ -204,7 +210,7 @@ section#visit_site {
       font-weight: bold;
       border: 1px solid gray;
       box-shadow: -1px 0.5px 2px gray;
-      margin: 2rem 0 3rem; }
+      margin: 1rem 0 0; }
       section#visit_site div.tab-content input#submit_cost:hover {
         cursor: pointer; }
 
